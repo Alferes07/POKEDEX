@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+     .container{
+        display:grid;
+        grid-template-columns: 25% 40% 25%;
+        grid-gap: 10px;
+        grid-auto-rows: 180px;
+    }
+
+    .imgsize{
+        width: 150px;
+        text-align: center;
+
+    }
+    .box{
+        background-color: darkblue;
+        color: brown;
+        text-align:center;
+    }
+
+    .logo{
+        grid-column: 1/4;
+    }
+
+</style>
+
+    <div class="container">
+        <div class="box logo">img logo</div>
+
+        <div class="box"> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" class="imgsize"></br> celula1</div>
+        <div class="box">celula2</div>
+        <div class="box">celula3</div>
+
+        <div class="box">celula4</div>
+        <div class="box">celula5</div>
+        <div class="box">celula6</div>
+
+        <div class="box">celula7</div>
+        <div class="box">celula8</div>
+        <div class="box">celula9</div>
+    </div>
+</body>
+</html>
