@@ -8,44 +8,331 @@
 </head>
 <body>
 <style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
      .container{
         display:grid;
-        grid-template-columns: 25% 40% 25%;
+        grid-template-columns: 15% 15% 15% 15%;
         grid-gap: 10px;
-        grid-auto-rows: 180px;
+        grid-auto-rows: 240px;
+        gap: 18px;
+        height:px;
+        width: auto;
+        justify-content: center;
+        background-color: yellow;
+        
     }
 
     .imgsize{
         width: 150px;
         text-align: center;
-
+        border-radius: 25px;
+        margin: 5px;
+        background-color: rgb(247, 250, 166);
+        border: black solid 5px;
     }
-    .box{
-        background-color: darkblue;
-        color: brown;
+
+    .logosize{ 
+        width: 600px;
         text-align:center;
     }
 
-    .logo{
-        grid-column: 1/4;
+    .box{
+        background-color:transparent;
+        color: brown;
+        text-align:center;
+        border-color: solid black;
+        border-radius: 20px;
     }
 
+    .logo{
+        grid-column: 1/5;
+        width: px;
+        height: px;
+    } 
+
+    .estiloclasse{
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        width: 70px;
+        color: snow;    
+    }
+    .fire{
+        background-color: orange;
+    }
+    .water{
+        background-color: blue;
+    }
+    .grass{
+        background-color: rgb(50, 207, 50);
+    }
+    .bug{
+        background-color: green;
+    }
+    .flying{
+        background-color:rgb(71, 168, 228);
+    }
+    .poison{
+        background-color:rgb(111, 24, 193);
+    }
+    .normal{
+        background-color: rgb(195, 182, 182);
+    }
+    .eletric{
+        background-color: rgb(252, 198, 0);
+    }
+    .ground{
+        background-color: rgb(168, 126, 0);
+    }
+    .fairy{
+        background-color: rgb(246, 177, 150);
+    }
+    .fighting{
+        background-color: orangered;
+    }
+    .psychic{
+        background-color: rgb(255, 0, 225);
+    }
+    .rock{
+        background-color: rgb(153, 62, 20);
+    }
+    .steel{
+        background-color: rgb(153, 153, 168);
+    }
+    .ice{
+        background-color: aqua;
+    }
+    .ghost{
+        background-color: blueviolet;
+    }
+    .dragon{
+        background-color: crimson;
+    }
+#logoimg{
+    border-radius:20px;
+}
+div{
+    font-size:larger;
+}
+#divvo{
+    display:flex;
+    justify-content: center;
+    background-color: yellow;
+}
+.font{ 
+      background-image: url(Letra/Teko/Teko-Regular.ttf);
+      background-position: bottom;
+      color: black;
+      font-family: Teko;
+      font-size: 30px;
+      background-repeat: repeat;
+      background-color:transparent;
+      border: none;
+}
+
+@font-face {
+    font-family:Teko;
+    src: url(Letra/Teko/Teko-Medium.ttf);
+}
 </style>
+<div id="divvo">
+    <div  class="container">
+        <div id="logoimg" class="box logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" class="logosize"></div>
 
-    <div class="container">
-        <div class="box logo">img logo</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" class="imgsize"><button class="font">Squirtle</button> <br> <button class="estiloclasse water">Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png" class="imgsize"><button class="font">Wartortle</button><br><button class="estiloclasse water" >Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" class="imgsize"><button class="font">Blastoise</button><br><button class="estiloclasse water" >Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" class="imgsize"><button class="font">Bulbasaur</button><br><button class="estiloclasse grass" >Grass</button><button class="estiloclasse poison" >Poison</button></div>
 
-        <div class="box"> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" class="imgsize"></br> celula1</div>
-        <div class="box">celula2</div>
-        <div class="box">celula3</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png" class="imgsize"><button class="font">Ivysaur</button><br><button    class="estiloclasse grass">Grass</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" class="imgsize"><button class="font">Venusaur</button><br><button   class="estiloclasse grass">Grass</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" class="imgsize"><button class="font">Charmander</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png" class="imgsize"><button class="font">Charmeleon</button><br><button class="estiloclasse fire">Fire</button></div>
 
-        <div class="box">celula4</div>
-        <div class="box">celula5</div>
-        <div class="box">celula6</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" class="imgsize"><button class="font">Charizard</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" class="imgsize"><button class="font">Caterpie</button><br><button class="estiloclasse bug" >Bug</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png" class="imgsize"><button class="font">Metapod</button><br><button class="estiloclasse bug" >Bug</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png" class="imgsize"><button class="font">Butterfree</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse flying">Flying</button></div>
 
-        <div class="box">celula7</div>
-        <div class="box">celula8</div>
-        <div class="box">celula9</div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png" class="imgsize"><button class="font">Weedle</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png" class="imgsize"><button class="font">Kakuna</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png" class="imgsize"><button class="font">Beedrill</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png" class="imgsize"><button class="font">Pidgey</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png" class="imgsize"><button class="font">Pidgeotto</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png" class="imgsize"><button class="font">Pidgeot</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png" class="imgsize"><button class="font">Rattata</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png" class="imgsize"><button class="font">Raticate</button><br><button class="estiloclasse normal">Normal</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png" class="imgsize"><button class="font">Spearow</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/022.png" class="imgsize"><button class="font">Fearow</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png" class="imgsize"><button class="font">Ekans</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png" class="imgsize"><button class="font">Arbok</button><br><button class="estiloclasse poison">Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png" class="imgsize"><button class="font">Pikachu</button><br><button class="estiloclasse eletric">Eletic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/026.png" class="imgsize"><button class="font">Raichu</button><br><button class="estiloclasse eletric">Eletic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png" class="imgsize"><button class="font">Sandshrew</button><br><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/028.png" class="imgsize"><button class="font">Sandslash</button><br><button class="estiloclasse ground">Ground</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/029.png" class="imgsize"><button class="font">Nidoran♀</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/030.png" class="imgsize"><button class="font">Nidorina</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/031.png" class="imgsize"><button class="font">Nidoqueen</button><br><button class="estiloclasse poison">Poison</button><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/032.png" class="imgsize"><button class="font">Nidoran♂</button><br><button class="estiloclasse poison">Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/033.png" class="imgsize"><button class="font">Nidorino</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/034.png" class="imgsize"><button class="font">Nidoking</button><br><button class="estiloclasse poison">Poison</button><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png" class="imgsize"><button class="font">Clefairy</button><br><button class="estiloclasse fairy">Fairy</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/036.png" class="imgsize"><button class="font">Clefable</button><br><button class="estiloclasse fairy">Fairy</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png" class="imgsize"><button class="font">Vulpix</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png" class="imgsize"><button class="font">Ninetales</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/039.png" class="imgsize"><button class="font">Jigglypuff</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse fairy">Fairy</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/040.png" class="imgsize"><button class="font">Wigglytuff</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse fairy">Fairy</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/041.png" class="imgsize"><button class="font">Zubat</button><br><button class="estiloclasse  poison">Poison</button> <button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/042.png" class="imgsize"><button class="font">Golbat</button><br><button class="estiloclasse poison">Poison</button> <button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png" class="imgsize"><button class="font">Oddish</button><br><button class="estiloclasse grass"> Grass</button> <button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/044.png" class="imgsize"><button class="font">Gloom</button><br><button class="estiloclasse  grass"> Grass</button> <button class="estiloclasse poison"> Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/045.png" class="imgsize"><button class="font">Vileplume</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/046.png" class="imgsize"><button class="font">Paras</button><br><button class="estiloclasse    bug">Bug</button><button class="estiloclasse grass">Grass</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png" class="imgsize"><button class="font">Parasect</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse grass">Grass</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png" class="imgsize"><button class="font">Venonat</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse poison"> Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/049.png" class="imgsize"><button class="font">Venomoth</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/050.png" class="imgsize"><button class="font">Diglett</button><br><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png" class="imgsize"><button class="font">Dugtrio</button><br><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png" class="imgsize"><button class="font">Meowth</button><br><button class="estiloclasse normal">Normal</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/053.png" class="imgsize"><button class="font">Persian</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/054.png" class="imgsize"><button class="font">Psyduck</button><br><button class="estiloclasse water">Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/055.png" class="imgsize"><button class="font">Golduck</button><br><button class="estiloclasse water">Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/056.png" class="imgsize"><button class="font">Mankey</button><br><button class="estiloclasse fighting">Fighting</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/057.png" class="imgsize"><button class="font">Primeape</button><br><button class="estiloclasse fighting">Fighting</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/058.png" class="imgsize"><button class="font">Growlithe</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png" class="imgsize"><button class="font">Arcanine</button><br><button class="estiloclasse  fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png" class="imgsize"><button class="font">Poliwag</button><br><button class="estiloclasse water">Water</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/061.png" class="imgsize"><button class="font">Poliwhirl</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/062.png" class="imgsize"><button class="font">Poliwrath</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/063.png" class="imgsize"><button class="font">Abra</button><br><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/064.png" class="imgsize"><button class="font">Kadabra</button><br><button class="estiloclasse psychic">Psychic</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png" class="imgsize"><button class="font">Alakazam</button><br><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/066.png" class="imgsize"><button class="font">Machop</button><br><button class="estiloclasse fighting">Fighting</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/067.png" class="imgsize"><button class="font">Machoke</button><br><button class="estiloclasse fighting">Fighting</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/068.png" class="imgsize"><button class="font">Machamp</button><br><button class="estiloclasse fighting">Fighting</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png" class="imgsize"><button class="font">Bellsprout</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/070.png" class="imgsize"><button class="font">Weepinbell</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/071.png" class="imgsize"><button class="font">Victreebel</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/072.png" class="imgsize"><button class="font">Tentacool</button><br><button class="estiloclasse water">Warter</button><button class="estiloclasse poison"> Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/073.png" class="imgsize"><button class="font">Tentacruel</button><br><button class="estiloclasse water">Warter</button><button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/074.png" class="imgsize"><button class="font">Geodude</button><br><button class="estiloclasse  rock">Rock</button><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/075.png" class="imgsize"><button class="font">Graveler</button><br><button class="estiloclasse rock">Rock</button><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/076.png" class="imgsize"><button class="font">Golem</button><br><button class="estiloclasse    rock">Rock</button><button class="estiloclasse ground">Ground</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/077.png" class="imgsize"><button class="font">Ponyta</button><br><button class="estiloclasse   fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/078.png" class="imgsize"><button class="font">Rapidash</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/079.png" class="imgsize"><button class="font">Slowpoke</button><br><button class="estiloclasse water">Warter</button><button class="estiloclasse psychic">Psyduck</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/080.png" class="imgsize"><button class="font">Slowbro</button><br><button class="estiloclasse  water">Warter</button><button class="estiloclasse psychic">Psyduck</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/081.png" class="imgsize"><button class="font">Magnemite</button><br><button class="estiloclasse eletric">Eletic</button><Button class="estiloclasse steel">Steel</Button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/082.png" class="imgsize"><button class="font">Magneton</button><br><button class="estiloclasse  eletric">Eletic</button><Button class="estiloclasse steel">Steel</Button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/083.png" class="imgsize"><button class="font">Farfetch'd</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/084.png" class="imgsize"><button class="font">Doduo</button><br><button class="estiloclasse      normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/085.png" class="imgsize"><button class="font">Dodrio</button><br><button class="estiloclasse normal">Normal</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/086.png" class="imgsize"><button class="font">Seel</button><br><button class="estiloclasse    water">Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/087.png" class="imgsize"><button class="font">Dewgong</button><br><button class="estiloclasse water">Water</button><button class="estiloclasse ice">Ice</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/088.png" class="imgsize"><button class="font">Grimer</button><br><button class="estiloclasse poison">Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/089.png" class="imgsize"><button class="font">Muk</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/090.png" class="imgsize"><button class="font">Shellder</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/091.png" class="imgsize"><button class="font">Cloyster</button><br><button class="estiloclasse water">Warter</button><button class="estiloclasse ice">Ice</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/092.png" class="imgsize"><button class="font">Gastly</button><br><button class="estiloclasse ghost">Ghost</button><button class="estiloclasse poison"> Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/093.png" class="imgsize"><button class="font">Haunter</button><br><button class="estiloclasse ghost">Ghost</button><button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/094.png" class="imgsize"><button class="font">Gengar</button><br><button class="estiloclasse  ghost">Ghost</button><button class="estiloclasse poison"> Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/095.png" class="imgsize"><button class="font">Onix</button><br><button class="estiloclasse rock">Rock</button><button class="estiloclasse ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/096.png" class="imgsize"><button class="font">Drowzee</button><br><button class="estiloclasse psychic">Psychic</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/097.png" class="imgsize"><button class="font">Hypno</button><br><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/098.png" class="imgsize"><button class="font">Krabby</button><br><button class="estiloclasse water">Water</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/099.png" class="imgsize"><button class="font">Kingler</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/100.png" class="imgsize"><button class="font">Voltorb</button><br><button class="estiloclasse eletric">Eletic</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/101.png" class="imgsize"><button class="font">Electrode</button><br><button class="estiloclasse eletric">Eletic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/102.png" class="imgsize"><button class="font">Exeggcute</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/103.png" class="imgsize"><button class="font">Exeggutor</button><br><button class="estiloclasse grass">Grass</button><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/105.png" class="imgsize"><button class="font">Cubone</button><br><button class="estiloclasse  ground">Ground</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/105.png" class="imgsize"><button class="font">Marowak</button><br><button class="estiloclasse ground">Ground</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/106.png" class="imgsize"><button class="font">Hitmonlee</button><br><button class="estiloclasse  fighting">Fighting</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/107.png" class="imgsize"><button class="font">Hitmonchan</button><br><button class="estiloclasse fighting">Fighting</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/108.png" class="imgsize"><button class="font">Lickitung</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/109.png" class="imgsize"><button class="font">Koffing</button><br><button class="estiloclasse poison">Poison</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/110.png" class="imgsize"><button class="font">Weezing</button><br><button class="estiloclasse poison">Poison</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/111.png" class="imgsize"><button class="font">Rhyhorn</button><br><button class="estiloclasse ground">Ground</button><button class="estiloclasse rock">Rock</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/112.png" class="imgsize"><button class="font">Rhydon</button><br><button class="estiloclasse  ground">Ground</button><button class="estiloclasse rock">Rock</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/113.png" class="imgsize"><button class="font">Chansey</button><br><button class="estiloclasse normal">Normal</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/114.png" class="imgsize"><button class="font">Tangela</button><br><button class="estiloclasse grass">Grass</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/115.png" class="imgsize"><button class="font">Kangaskhan</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/116.png" class="imgsize"><button class="font">Horsea</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/117.png" class="imgsize"><button class="font">Seadra</button><br><button class="estiloclasse water">Warter</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/118.png" class="imgsize"><button class="font">Goldeen</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/119.png" class="imgsize"><button class="font">Seaking</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/120.png" class="imgsize"><button class="font">Staryu</button><br><button class="estiloclasse  water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/121.png" class="imgsize"><button class="font">Starmie</button><br><button class="estiloclasse water">Warter</button><button class="estiloclasse psychic">Psychic</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/122.png" class="imgsize"><button class="font">Mr. Mime</button><br><button class="estiloclasse psychic">Psychic</button><button class="estiloclasse fairy">Fairy</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/123.png" class="imgsize"><button class="font">Scyther</button><br><button class="estiloclasse bug">Bug</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/124.png" class="imgsize"><button class="font">Jynx</button><br><button class="estiloclasse ice">Ice</button><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/125.png" class="imgsize"><button class="font">Electabuzz</button><br><button class="estiloclasse eletric">Eletic</button></div>
+        
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/126.png" class="imgsize"><button class="font">Magmar</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/127.png" class="imgsize"><button class="font">Pinsir</button><br><button class="estiloclasse bug">Bug</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/128.png" class="imgsize"><button class="font">Tauros</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/129.png" class="imgsize"><button class="font">Magikarp</button><br><button class="estiloclasse water">Water</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/130.png" class="imgsize"><button class="font">Gyarados</button><br><button class="estiloclasse water">Water</button><button class="estiloclasse ice">Ice</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/131.png" class="imgsize"><button class="font">Lapras</button><br><button class="estiloclasse   water">Water</button><button class="estiloclasse ice">Ice</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/132.png" class="imgsize"><button class="font">Ditto</button><br><button class="estiloclasse normal">Norrmal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/133.png" class="imgsize"><button class="font">Eevee</button><br><button class="estiloclasse normal">Normal</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/134.png" class="imgsize"><button class="font">Vaporeon</button><br><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/135.png" class="imgsize"><button class="font">Jolteon</button><br><button class="estiloclasse eletric">Eletic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/136.png" class="imgsize"><button class="font">Flareon</button><br><button class="estiloclasse fire">fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/137.png" class="imgsize"><button class="font">Porygon</button><br><button class="estiloclasse normal">Normal</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/138.png" class="imgsize"><button class="font">Omanyte</button><br><button class="estiloclasse  rock">Rock</button><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/139.png" class="imgsize"><button class="font">Omastar</button><br><button class="estiloclasse  rock">Rock</button><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/140.png" class="imgsize"><button class="font">Kabuto</button><br><button class="estiloclasse   rock">Rock</button><button class="estiloclasse water">Warter</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/141.png" class="imgsize"><button class="font">Kabutops</button><br><button class="estiloclasse rock">Rock</button><button class="estiloclasse water">Warter</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/142.png" class="imgsize"><button class="font">Aerodactyl</button><br><button class="estiloclasse rock">Rock</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png" class="imgsize"><button class="font">Snorlax</button><br><button class="estiloclasse normal">Normal</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/144.png" class="imgsize"><button class="font">Articuno</button><br><button class="estiloclasse ice">Ice</button><button class="estiloclasse flying">Flying</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/145.png" class="imgsize"><button class="font">Zapdos</button><br><button class="estiloclasse eletric">Eletic</button><button class="estiloclasse flying">Flying</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/146.png" class="imgsize"><button class="font">Moltres</button><br><button class="estiloclasse fire">Fire</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/147.png" class="imgsize"><button class="font">Dratini</button><br><button class="estiloclasse dragon">Dragon</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/148.png" class="imgsize"><button class="font">Dragonair</button><br><button class="estiloclasse dragon">Dragon</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png" class="imgsize"><button class="font">Dragonite</button><br><button class="estiloclasse dragon">Dragon</button><button class="estiloclasse flying">Flying</button></div>
+
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png" class="imgsize"><button class="font">Mewtwo</button><br><button class="estiloclasse psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png" class="imgsize"><button class="font">Mew</button><br><button class="estiloclasse    psychic">Psychic</button></div>
+        <div class="box"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/152.png" class="imgsize"><button class="font">Chikorita</button><br><button class="estiloclasse grass">Grass</button></div>
     </div>
+</div>    
 </body>
 </html>
